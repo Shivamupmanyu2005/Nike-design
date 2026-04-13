@@ -2,6 +2,7 @@ import { useState } from 'react'
 import nikeLogo from './assets/nike-logo.png'
 import nikeShoe from './assets/hero-shoe.png'
 import { motion } from 'motion/react'
+import skyBg from './assets/sky.png'
 
 import './App.css'
 
@@ -11,7 +12,9 @@ function App() {
 
   return (
     <>
-      <div className="bg-[url('src/assets/sky.png')] h-screen w-screen bg-cover">
+      <div className="h-screen w-screen bg-cover" style={{
+        backgroundImage: `url(${skyBg})`
+      }}>
         <nav className='fixed top-0 left-0 right-0 z-50 flex flex-row items-center justify-between px-8 lg:px-16 py-5 bg-white/80 backdrop-blur-md border-b border-border/30 shadow-2xl shadow-neutral-700/40'>
           <img src={nikeLogo} alt="" srcset="" className='h-5 shadow-2xl shadow-neutral-700' />
 
